@@ -1,5 +1,7 @@
 name: Run JavaScript Code
 
+on: [push]
+
 jobs:
   run_js_code:
     name: Run JavaScript Code Job
@@ -14,5 +16,4 @@ jobs:
           node-version: '14'
 
       - name: Run JavaScript file
-        run:  batch10.js
-     
+        run: node batch10.js
